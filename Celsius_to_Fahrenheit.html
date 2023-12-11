@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Celsius to Fahrenheit</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif; background-color:#ffe6e6;}
+.mySlides {display: none}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+ 
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #1<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Celsius_to_Fahrenheit.html" class="w3-bar-item w3-button">Celsius to Fahrenheit </a>
+            <a href="Fahrenheit_to_Celsius.html" class="w3-bar-item w3-button">Fahrenheit to Celsius</a>
+            <a href="Meters_to_Feet.html" class="w3-bar-item w3-button">Meters to Feet</a>
+            <a href="Feet_to_Meters.html" class="w3-bar-item w3-button">Feet to Meters</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #2<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Calculator.html" class="w3-bar-item w3-button">Calculator</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #3<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="While_Loop.html" class="w3-bar-item w3-button">While Loop</a>
+            <a href="Do_While-Loop.html" class="w3-bar-item w3-button">Do While Loop</a>
+            <a href="For_Loop.html" class="w3-bar-item w3-button">For Loop</a>
+      </div>
+    </div>
+   
+   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #4<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Employee_Wages.html" class="w3-bar-item w3-button">Employee Wages</a>
+      </div>
+    </div>
+<!--vvvvvvvvv    ACTUAL CONTENT OF THE WEBSITE   vvvvvvvvv-->
+  </div>
+</div>
+<br>
+<br>
+<h1>Celsius to Fahrenheit</h1>
+<p>
+  <label for="celsius">Celsius</label> 
+  <input id="celsius" name="celsius" type="number" oninput="convertToFahrenheit()">
+  <button onclick="clearValues()">Clear Values</button>
+</p>
+   
+<label for="fahrenheit" id="resultLabel">Result in Fahrenheit:</label>  
+<input id="fahrenheit" name="fahrenheit" type="number" readonly></input></p>
+
+<script>
+function convertToFahrenheit() {
+  var celsius = document.getElementById("celsius").value * 1;
+  var fahrenheit = (celsius * 9/5) + 32;
+
+  document.getElementById("resultLabel").innerHTML = 'Result in Fahrenheit:';
+  document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
+}
+
+function clearValues() {
+  document.getElementById("celsius").value = '';
+  document.getElementById("resultLabel").innerHTML = 'Result in Fahrenheit:';
+  document.getElementById("fahrenheit").value = '';
+}
+</script>
+
+</body>
+</html>
