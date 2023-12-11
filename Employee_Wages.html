@@ -1,1 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Introduction to Computing Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif; background-color:#ccccff;}
+.mySlides {display: none}
+</style>
+<body>
 
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+ 
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #1<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Celsius_to_Fahrenheit.html" class="w3-bar-item w3-button">Celsius to Fahrenheit </a>
+            <a href="Fahrenheit_to_Celsius.html" class="w3-bar-item w3-button">Fahrenheit to Celsius</a>
+            <a href="Meters_to_Feet.html" class="w3-bar-item w3-button">Meters to Feet</a>
+            <a href="Feet_to_Meters.html" class="w3-bar-item w3-button">Feet to Meters</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #2<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Calculator.html" class="w3-bar-item w3-button">Calculator</a>
+      </div>
+    </div>
+
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #3<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="While_Loop.html" class="w3-bar-item w3-button">While Loop</a>
+            <a href="Do_While-Loop.html" class="w3-bar-item w3-button">Do While Loop</a>
+            <a href="For_Loop.html" class="w3-bar-item w3-button">For Loop</a>
+      </div>
+    </div>
+   
+   <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">ASSIGNMENT #4<i class="fa fa-caret-down"></i></button>     
+           <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="Employee_Wages.html" class="w3-bar-item w3-button">Employee Wages</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--vvvvvvvvv    ACTUAL CONTENT OF THE WEBSITE   vvvvvvvvv-->
+<br>
+<br>
+<h1 style="text-align:center; color:black">Payroll</h1>
+<h3 style="text-align:center; color:black">Company Employees</h3>
+<div>
+  <style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+   <table style = "margin-left:auto; margin-right:auto" border=2>   
+    <colgroup>
+    <col span="7" style="background-color: White">
+    </colgroup>
+       <thead>
+         <tbody>
+          <tr>
+              <td>Emp. No.</td>
+              <td>Employee Name</td>
+              <td>Days Worked</td>
+              <td>Daily Wage</td>
+              <td>Gross Pay</td>
+              <td>Deductions</td>
+              <td>Net Pay</td>            
+           </tr> 
+          <tr>
+              <td>1</td>
+              <td>Samuel Melacore</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr> 
+           <tr>  
+              <td>2</td>
+              <td>Josh Dovewell</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr> 
+           <tr>  
+              <td>3</td>
+              <td>Katomo Miyamoto</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr> 
+           <tr>  
+              <td>4</td>
+              <td>Chen Cage</td>
+              <td>29</td>
+              <td>500</td>
+              <td>14500</td>
+              <td>2500</td>
+              <td>12000</td>            
+            <tr>  
+              <td>5</td>
+              <td>Herald Smith</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr> 
+           <tr>  
+              <td>6</td>
+              <td>Jinchun Dong</td>
+              <td>27</td>
+              <td>500</td>
+              <td>13500</td>
+              <td>2500</td>
+              <td>11000</td>            
+           </tr> 
+           <tr>  
+              <td>7</td>
+              <td>Kasandra Tomson</td>
+              <td>29</td>
+              <td>500</td>
+              <td>14500</td>
+              <td>2500</td>
+              <td>12000</td>            
+           </tr> 
+           <tr>  
+              <td>8</td>
+              <td>Erina Casacrya</td>
+              <td>27</td>
+              <td>500</td>
+              <td>13500</td>
+              <td>2500</td>
+              <td>11000</td>            
+           </tr> 
+           <tr>  
+              <td>9</td>
+              <td>Josh Dovewell</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr> 
+           <tr>  
+              <td>10</td>
+              <td>Ixion DeDrovo</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr> 
+           <tr>  
+              <td>11</td>
+              <td>Michela Weighman</td>
+              <td>26</td>
+              <td>500</td>
+              <td>13000</td>
+              <td>2500</td>
+              <td>10500</td>            
+           </tr> 
+           <tr>  
+              <td>12</td>
+              <td>Charles Salvador</td>
+              <td>29</td>
+              <td>500</td>
+              <td>14500</td>
+              <td>2500</td>
+              <td>12000</td>            
+           </tr>      
+           <tr>  
+              <td>13</td>
+              <td>Randel Belmont</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr>  
+           <tr>  
+              <td>14</td>
+              <td>Simon McAurther</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr>
+           <tr>  
+              <td>15</td>
+              <td>Kayla DeGuzman</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr>
+           <tr>  
+              <td>16</td>
+              <td>Eline Wesore</td>
+              <td>29</td>
+              <td>500</td>
+              <td>14500</td>
+              <td>2500</td>
+              <td>12000</td>            
+           </tr>
+           <tr>  
+              <td>17</td>
+              <td>Ruza Yorvivh</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr>
+           <tr>  
+              <td>18</td>
+              <td>Yana Cordova</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr>
+           <tr>  
+              <td>19</td>
+              <td>Trevor Manchester</td>
+              <td>30</td>
+              <td>500</td>
+              <td>15000</td>
+              <td>2500</td>
+              <td>12500</td>            
+           </tr>
+           <tr>  
+              <td>20</td>
+              <td>Winrie Ainchter</td>
+              <td>28</td>
+              <td>500</td>
+              <td>14000</td>
+              <td>2500</td>
+              <td>11500</td>            
+           </tr>
+       </tbody>
+       <tfoot>
+          <tr>
+              <td></td>
+              <td></td>
+              <td>Total:</td>
+              <td>10000</td>
+              <td>292000</td>
+              <td>50000</td>
+              <td>242000</td>              
+
+          </tr> 
+       </foot>
+   </table>
+   <h3 style="text-align:center; color:black">Contractors</h3>
+    <table style = "margin-left:auto; margin-right:auto" border=2>   
+    <colgroup>
+    <col span="7" style="background-color: White">
+    </colgroup>
+       <thead>
+         <tbody>
+          <tr>
+              <td>Con. No.</td>
+              <td>Employee Name</td>
+              <td>Days Worked</td>
+              <td>Daily Wage</td>
+              <td>Net Pay</td>
+              <td>Deductions</td>          
+           </tr> 
+
+          <tr>
+              <td>1</td>
+              <td>Donny Sailas</td>
+              <td>30</td>
+              <td>820</td>
+              <td>24600</td>
+              <td>N/A</td>           
+           </tr> 
+           <tr>  
+              <td>2</td>
+              <td>Rick Ferdinand</td>
+              <td>30</td>
+              <td>840</td>
+              <td>25200</td>
+              <td>N/A</td>           
+           </tr> 
+           <tr>  
+              <td>3</td>
+              <td>Katomo Miyamoto</td>
+              <td>30</td>
+              <td>830</td>
+              <td>24900</td>
+              <td>N/A</td>          
+           </tr> 
+           <tr>  
+              <td>4</td>
+              <td>Eugene Salamanca</td>
+              <td>30</td>
+              <td>810</td>
+              <td>24300</td>
+              <td>N/A</td>         
+            <tr>  
+              <td>5</td>
+              <td>Marry White</td>
+              <td>30</td>
+              <td>750</td>
+              <td>22500</td>
+              <td>N/A</td>            
+           </tr>
+         </tbody>
+         <tfoot>
+          <tr>
+              <td></td>
+              <td></td>
+              <td>Total:</td>
+              <td>4050</td>
+              <td>121500</td>
+              <td>N/A</td>            
+
+          </tr> 
+       </foot>
+   </table> 
+   <br>
+   <br>
+   <br>
+   <br>
+</div>
+</body>
+</html>
